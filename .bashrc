@@ -1,20 +1,57 @@
-# .bashrc
+# ~/.bashrc: executed by bash(1) for non-login shells.
+# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
+# for examples
 
-# Source global definitions
+#-------------------------------------------------------------
+# If not running interactively, don't do anything
+#-------------------------------------------------------------
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
+#-------------------------------------------------------------
+# Source global definitions (if any)
+#-------------------------------------------------------------
 if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
+  . /etc/bashrc
 fi
 
+#-------------------------------------------------------------
+# History
+#-------------------------------------------------------------
+
+# don't put duplicate lines or lines starting with space in the history.
+# See bash(1) for more options
+HISTCONTROL=ignoreboth
+
+# append to the history file, don't overwrite it
+shopt -s histappend
+
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=1000
+HISTFILESIZE=2000
+
+#-------------------------------------------------------------
 # User specific aliases and functions
+#-------------------------------------------------------------
 PATH=$PATH:$HOME/bin
 export PATH
 
-#https://github.com/git/git/tree/master/contrib/completion
+# https://github.com/rbenv/rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+#-------------------------------------------------------------
+# Git
+#-------------------------------------------------------------
+
+# https://github.com/git/git/tree/master/contrib/completion
 source ~/.git-completion.bash
 
-#fancy git command prompt
+# fancy git command prompt
 function parse_git_branch {
-git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \(\1\)/'
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \(\1\)/'
 }
 function files {
   /bin/ls -1 | /usr/bin/wc -l | /bin/sed 's: ::g'
@@ -22,34 +59,10 @@ function files {
 function size {
   /bin/ls -lah | /bin/grep -m 1 total | /bin/sed 's/total //'
 }
-#\a : an ASCII bell character (07)
-#\d : the date in "Weekday Month Date" format (e.g., "Tue May 26")
-#\D{format} :  the format is passed to strftime(3) and the result is inserted into the prompt string; an empty format results in a locale-specific time representation. The braces are required
-#\e : an ASCII escape character (033)
-#\h : the hostname up to the first '.'
-#\H : the hostname
-#\j : the number of jobs currently managed by the shell
-#\l : the basename of the shell.s terminal device name
-#\n : newline
-#\r : carriage return
-#\s : the name of the shell, the basename of $0 (the portion following the final slash)
-#\t : the current time in 24-hour HH:MM:SS format
-#\T : the current time in 12-hour HH:MM:SS format
-#\@ : the current time in 12-hour am/pm format
-#\A : the current time in 24-hour HH:MM format
-#\u : the username of the current user
-#\v : the version of bash (e.g., 2.00)
-#\V : the release of bash, version + patch level (e.g., 2.00.0)
-#\w : the current working directory, with $HOME abbreviated with a tilde
-#\W : the basename of the current working directory, with $HOME abbreviated with a tilde
-#\! : the history number of this command
-#\# : the command number of this command
-#\$ : if the effective UID is 0, a #, otherwise a $
-#\nnn : the character corresponding to the octal number nnn
-#\\ : a backslash
-#\[ : begin a sequence of non-printing characters, which could be used to embed a terminal control sequence into the prompt
-#\] : end a sequence of non-printing characters
-# Reset
+
+#-------------------------------------------------------------
+# Color definitions
+#-------------------------------------------------------------
 Color_Off='\[\e[0m\]'       # Text Reset
 # Regular Colors
 Black='\[\e[0;30m\]'        # Black
@@ -114,15 +127,59 @@ On_IBlue='\[\e[0;104m\]'    # Blue
 On_IPurple='\[\e[10;95m\]'  # Purple
 On_ICyan='\[\e[0;106m\]'    # Cyan
 On_IWhite='\[\e[0;107m\]'   # White
-#PS1="\n$BBlack(\[$Green\w$BBlack)\n$BBlack\[\016\]\[\017\]($Blue\u@\h$BBlack)$Red\$(parse_git_branch)$BBlack\$ $Color_Off"
+
+#-------------------------------------------------------------
+# Shell Prompt
+#-------------------------------------------------------------
+#\a : an ASCII bell character (07)
+#\d : the date in "Weekday Month Date" format (e.g., "Tue May 26")
+#\D{format} :  the format is passed to strftime(3) and the result is inserted into the prompt string; an empty format results in a locale-specific time representation. The braces are required
+#\e : an ASCII escape character (033)
+#\h : the hostname up to the first '.'
+#\H : the hostname
+#\j : the number of jobs currently managed by the shell
+#\l : the basename of the shell.s terminal device name
+#\n : newline
+#\r : carriage return
+#\s : the name of the shell, the basename of $0 (the portion following the final slash)
+#\t : the current time in 24-hour HH:MM:SS format
+#\T : the current time in 12-hour HH:MM:SS format
+#\@ : the current time in 12-hour am/pm format
+#\A : the current time in 24-hour HH:MM format
+#\u : the username of the current user
+#\v : the version of bash (e.g., 2.00)
+#\V : the release of bash, version + patch level (e.g., 2.00.0)
+#\w : the current working directory, with $HOME abbreviated with a tilde
+#\W : the basename of the current working directory, with $HOME abbreviated with a tilde
+#\! : the history number of this command
+#\# : the command number of this command
+#\$ : if the effective UID is 0, a #, otherwise a $
+#\nnn : the character corresponding to the octal number nnn
+#\\ : a backslash
+#\[ : begin a sequence of non-printing characters, which could be used to embed a terminal control sequence into the prompt
+#\] : end a sequence of non-printing characters
 PS1="$IBlack[\t] ($Green\w$IBlack)\n$BYellow\u$BWhite@$BBlue\h$IRed\$(parse_git_branch) $IBlack\$ $Color_Off"
 
-#https://github.com/rbenv/rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+#-------------------------------------------------------------
+# enable color support of ls and grep
+#-------------------------------------------------------------
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
 
-#ruby
-alias be="bundle exec"
-alias ber="bundle exec rspec"
-alias bet="bundle exec teaspoon"
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
 
+#-------------------------------------------------------------
+# Alias definitions.
+#-------------------------------------------------------------
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+if [ -f ~/.bash_aliases ]; then
+  . ~/.bash_aliases
+fi
