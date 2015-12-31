@@ -35,3 +35,5 @@
   lg = log --graph --all --pretty=format:'%C(yellow)%h%Creset -%Cred%d%Creset %s %C(bold green)(%cr) %Creset%C(magenta)<%ae> %C(bold cyan)%an%Creset' --abbrev-commit --branches
   co = checkout
   br = branch
+[push]
+	default = simple
