@@ -20,7 +20,6 @@ fi
 #-------------------------------------------------------------
 # History
 #-------------------------------------------------------------
-
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -35,7 +34,6 @@ HISTFILESIZE=2000
 #-------------------------------------------------------------
 # Git
 #-------------------------------------------------------------
-
 # https://github.com/git/git/tree/master/contrib/completion
 source ~/.git-completion.bash
 

@@ -1,6 +1,6 @@
 [user]
-	email = brian@clifton.me
-	name = Brian Clifton
+  email = brian@clifton.me
+  name = Brian Clifton
 [core]
   # two-space tabs
   pager  = less -FXR -x2
@@ -13,18 +13,15 @@
   interactive = auto
   ui          = auto
 [color "branch"]
-  # good looking colors i copy/pasted from somewhere
   current = cyan bold
   local   = green bold
   remote  = red bold
 [color "diff"]
-  # good looking colors i copy/pasted from somewhere
   meta = yellow bold
   frag = magenta bold
   old  = red bold
   new  = green bold
 [color "status"]
-  # good looking colors i copy/pasted from somewhere
   added     = green bold
   changed   = yellow bold
   untracked = red
@@ -36,4 +33,4 @@
   co = checkout
   br = branch
 [push]
-	default = simple
+  default = simple
