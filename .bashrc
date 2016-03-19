@@ -33,16 +33,6 @@ HISTSIZE=1000
 HISTFILESIZE=2000
 
 #-------------------------------------------------------------
-# User specific aliases and functions
-#-------------------------------------------------------------
-PATH=$PATH:$HOME/bin
-export PATH
-
-# https://github.com/rbenv/rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
-#-------------------------------------------------------------
 # Git
 #-------------------------------------------------------------
 
