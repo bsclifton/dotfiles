@@ -5,6 +5,7 @@ alias l='ls -CF'
 
 # ruby
 alias be="bundle exec"
+alias bi="bundle install"
 alias ber="bundle exec rspec"
 alias bet="bundle exec teaspoon"
 
