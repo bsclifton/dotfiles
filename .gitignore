@@ -10,6 +10,7 @@
 .bash_history
 .bash_local
 .bash_logout
+.bash_profile
 !.profile
 
 # Git aliases, identification info
@@ -19,8 +20,6 @@
 
 # IRb config
 !.irbrc
-# RVM config
-!.rvmrc
 
 # Vim plugins, ftplugins, syntax etc etc
 !.vim
@@ -49,15 +48,6 @@
 !.vim/syntax/*
 # Vim settings
 !.vimrc
-
-# Local copies of tools/scripts
-!bin
-!bin/*
-bin/.*.swp
-# This is an actual binary that comes from a third party app
-!bin/asciinema
-# Same
-!bin/rack
 
 # Config for local daemons (e.g. squid)
 !etc

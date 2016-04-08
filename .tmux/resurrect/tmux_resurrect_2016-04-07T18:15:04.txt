@@ -1,0 +1,9 @@
+pane	0	0	:bash	1	:*	0	:/home/clifton	0	bash	:
+pane	0	0	:bash	1	:*	1	:/home/clifton	0	bash	:
+pane	0	0	:bash	1	:*	2	:/home/clifton	0	bash	:
+pane	0	0	:bash	1	:*	3	:/home/clifton	0	bash	:
+pane	0	0	:bash	1	:*	4	:/home/clifton	0	bash	:
+pane	0	0	:bash	1	:*	5	:/home/clifton	0	bash	:
+pane	0	0	:bash	1	:*	6	:/home/clifton	1	bash	:
+window	0	0	1	:*	885e,237x50,0,0[237x6,0,0,0,237x6,0,7,1,237x6,0,14,2,237x6,0,21,3,237x6,0,28,4,237x6,0,35,5,237x8,0,42,6]
+state	0	
