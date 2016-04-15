@@ -1,0 +1,12 @@
+pane	diabloapp-lb[PROD]	0	:ssh	1	:*	0	:/home/clifton	0	ssh	:ssh bclifton@p3pldiabloapplb.prod.phx3.secureserver.net
+pane	diabloapp-lb[PROD]	0	:ssh	1	:*	1	:/home/clifton	1	ssh	:ssh bclifton@p3pldiabloappla.prod.phx3.secureserver.net
+pane	diabloapp[PROD]	0	:bash	1	:*	0	:/home/clifton	0	ssh	:ssh bclifton@p3pldiabloapp01.prod.phx3.secureserver.net
+pane	diabloapp[PROD]	0	:bash	1	:*	1	:/home/clifton	1	bash	:
+pane	diabloapp[PROD]	0	:bash	1	:*	2	:/home/clifton	0	ssh	:ssh bclifton@p3pldiabloapp03.prod.phx3.secureserver.net
+pane	diabloapp[PROD]	0	:bash	1	:*	3	:/home/clifton	0	ssh	:ssh bclifton@p3pldiabloapp04.prod.phx3.secureserver.net
+pane	diabloapp[PROD]	0	:bash	1	:*	4	:/home/clifton	0	ssh	:ssh bclifton@p3pldiabloapp05.prod.phx3.secureserver.net
+pane	diabloapp[PROD]	0	:bash	1	:*	5	:/home/clifton	0	ssh	:ssh bclifton@p3pldiabloapp06.prod.phx3.secureserver.net
+pane	diabloapp[PROD]	0	:bash	1	:*	6	:/home/clifton	0	ssh	:ssh bclifton@p3pldiabloapp07.prod.phx3.secureserver.net
+window	diabloapp-lb[PROD]	0	1	:*	9429,237x50,0,0[237x25,0,0,11,237x24,0,26,12]
+window	diabloapp[PROD]	0	1	:*	5187,237x50,0,0[237x6,0,0,1,237x6,0,7,2,237x6,0,14,3,237x6,0,21,4,237x6,0,28,5,237x6,0,35,6,237x8,0,42,7]
+state	diabloapp-lb[PROD]	diabloapp[PROD]
