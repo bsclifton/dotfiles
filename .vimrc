@@ -13,7 +13,7 @@ set viminfo='20,<1000
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Show matching brackets when text indicator is over them
-set showmatch 
+set showmatch
 " How many tenths of a second to blink when matching brackets
 set mat=2
 
@@ -31,10 +31,13 @@ endtry
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
 
-" Show leading whitespace that includes spaces, and trailing whitespace.
-" per http://vim.wikia.com/wiki/Highlight_unwanted_spaces
-hi ExtraWhitespace ctermbg=red guibg=#f92672
-:autocmd BufWinEnter * match ExtraWhitespace /^\s* \s*\|\s\+$/
+" Highlight tabs (hate those things)
+hi UnwantedTabs ctermbg=green guibg=#0000ff
+:autocmd BufWinEnter * match UnwantedTabs /\t/
+
+" Highlight trailing spaces
+hi TrailingWhitespace ctermbg=red guibg=#f92672
+:autocmd BufWinEnter * 2match TrailingWhitespace /\s\+$/
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
