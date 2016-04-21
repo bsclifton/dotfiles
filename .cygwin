@@ -1,0 +1,13 @@
+#work in progress...
+echo "Running Cygwin config..."
+
+#example which breaks:
+#git -c core.longpaths=true clone C:\Users\itsnotvalid\AppData\Roaming\npm-cache\_git-remotes\https-github-com-itsnotvalid-node-plist-native-git-4e9eff69 C:\cygwin64\tmp\npm-148168-d3eacb24\git-cache-b4419446b15c\374dd978d1c6a895f9e4    5bff958ce4aef2ccbe44
+
+#potential fix per Eliot Moss, Cygwin mailing list (only works if paths are quoted).
+#function git {
+#  declare -a ARGS
+#  for n in "$@" ; do ARGS+=("$(cygpath -u -- "${n}")") ; done
+#  command git "${ARGS[@]}"
+#}
+

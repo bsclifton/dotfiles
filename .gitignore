@@ -12,6 +12,7 @@
 .bash_logout
 .bash_profile
 !.profile
+!.cygwin
 
 # Git aliases, identification info
 !.gitconfig
