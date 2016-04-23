@@ -1,6 +1,9 @@
-#work in progress...
-echo "Running Cygwin config..."
+echo "Applying Cygwin/Windows specific configs..."
 
+# prevent stupid filemode issues; Windows can't handle these properly.
+git config core.filemode false
+
+#re-alias git to work-around issue w/ npm (work in progress...)
 #example which breaks:
 #git -c core.longpaths=true clone C:\Users\itsnotvalid\AppData\Roaming\npm-cache\_git-remotes\https-github-com-itsnotvalid-node-plist-native-git-4e9eff69 C:\cygwin64\tmp\npm-148168-d3eacb24\git-cache-b4419446b15c\374dd978d1c6a895f9e4    5bff958ce4aef2ccbe44
 
