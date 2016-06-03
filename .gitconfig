@@ -5,6 +5,7 @@
   # two-space tabs
   pager  = less -FXR -x2
   editor = vim
+  autocrlf = input
 [color]
   # turn on color
   diff        = auto
