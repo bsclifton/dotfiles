@@ -11,5 +11,8 @@ alias bet="bundle exec teaspoon"
 
 alias proj="cd /cygdrive/c/Users/`whoami`/Projects"
 
-#tmux
+# tmux
 alias tmux="TERM=xterm-256color tmux"
+
+# vagrant
+alias vdu="vagrant destroy -f && vagrant up"
