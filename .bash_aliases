@@ -15,4 +15,4 @@ alias proj="cd /cygdrive/c/Users/`whoami`/Projects"
 alias tmux="TERM=xterm-256color tmux"
 
 # vagrant
-alias vdu="vagrant destroy -f && vagrant up"
+alias vdu="vagrant destroy -f && git clean -xdf && vagrant up"
