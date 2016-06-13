@@ -6,6 +6,7 @@
   pager  = less -FXR -x2
   editor = vim
   autocrlf = input
+  safecrlf = false
 [color]
   # turn on color
   diff        = auto
