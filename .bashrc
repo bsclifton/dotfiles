@@ -185,6 +185,10 @@ fi
 export PATH="$PATH:$HOME/bin"
 export PATH="/usr/games:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+if [ "$(uname -o)" == "Cygwin" ]; then
+  echo "Skipping rbenv (Cygwin)"
+else
+  eval "$(rbenv init -)"
+fi
 export PATH="/usr/games:$PATH"
 export PATH="/usr/games:$PATH"
