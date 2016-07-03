@@ -3,6 +3,9 @@ alias ll='ls -alhF'
 alias la='ls -A'
 alias l='ls -CF'
 
+# node
+alias npmg="npm ls -g --depth=0"
+
 # ruby
 alias be="bundle exec"
 alias bi="bundle install"
