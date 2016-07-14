@@ -32,9 +32,11 @@ HISTSIZE=1000
 HISTFILESIZE=2000
 
 #-------------------------------------------------------------
-# Cygwin
+# Platform specific
 #-------------------------------------------------------------
-if [ "$(uname -o)" == "Cygwin" ]; then
+if [ "$(uname -s)" == "Darwin" ]; then
+  source ~/.darwin
+elif [ "$(uname -o)" == "Cygwin" ]; then
   source ~/.cygwin
 fi
 
@@ -185,7 +187,9 @@ fi
 export PATH="$PATH:$HOME/bin"
 export PATH="/usr/games:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
-if [ "$(uname -o)" == "Cygwin" ]; then
+if [ "$(uname -s)" == "Darwin" ]; then
+  echo "Skipping rbenv (Mac)"
+elif [ "$(uname -o)" == "Cygwin" ]; then
   echo "Skipping rbenv (Cygwin)"
 else
   eval "$(rbenv init -)"
