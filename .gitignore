@@ -17,11 +17,9 @@
 
 # Git aliases, identification info
 !.gitconfig
-# The gitignore of this repository itself (!)
+!.git-completion.bash
+!.git-prompt.sh
 !.gitignore
-
-# IRb config
-!.irbrc
 
 # Vim plugins, ftplugins, syntax etc etc
 !.vim
@@ -51,16 +49,7 @@
 # Vim settings
 !.vimrc
 
-# Config for local daemons (e.g. squid)
-!etc
-!etc/*
-etc/clusto*.conf
-
 # Screen, tmux
-!.screenrc
 !.tmux.conf
 !.tmux
 !.tmux/*.yml
-
-# Gem config
-!.gemrc

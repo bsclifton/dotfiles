@@ -45,17 +45,11 @@ fi
 #-------------------------------------------------------------
 # https://github.com/git/git/tree/master/contrib/completion
 source ~/.git-completion.bash
-
-# fancy git command prompt
-function parse_git_branch {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \(\1\)/'
-}
-function files {
-  /bin/ls -1 | /usr/bin/wc -l | /bin/sed 's: ::g'
-}
-function size {
-  /bin/ls -lah | /bin/grep -m 1 total | /bin/sed 's/total //'
-}
+source ~/.git-prompt.sh
+#"<" means behind, ">" means ahead, "<>" means diverged and "=" means no difference.
+GIT_PS1_SHOWUPSTREAM="auto"
+#unstaged (*) and staged (+)
+GIT_PS1_SHOWDIRTYSTATE=1
 
 #-------------------------------------------------------------
 # Color definitions
@@ -155,7 +149,7 @@ On_IWhite='\[\e[0;107m\]'   # White
 #\\ : a backslash
 #\[ : begin a sequence of non-printing characters, which could be used to embed a terminal control sequence into the prompt
 #\] : end a sequence of non-printing characters
-PS1="$IBlack[\t] ($Green\w$IBlack)\n$BYellow\u$BWhite@$BBlue\h$IRed\$(parse_git_branch) $IBlack\$ $Color_Off"
+PS1="$IBlack[\t] ($Green\w$IBlack)\n$BYellow\u$BWhite@$BBlue\h$IRed\$(__git_ps1 \" (%s)\") $IBlack\$ $Color_Off"
 
 #-------------------------------------------------------------
 # enable color support of ls and grep
