@@ -14,3 +14,5 @@ git config core.filemode false
 #  command git "${ARGS[@]}"
 #}
 
+# cygwin specific aliases
+alias proj="cd /cygdrive/c/Users/`whoami`/Projects"

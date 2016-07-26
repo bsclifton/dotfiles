@@ -12,8 +12,6 @@ alias bi="bundle install"
 alias ber="bundle exec rspec"
 alias bet="bundle exec teaspoon"
 
-alias proj="cd /cygdrive/c/Users/`whoami`/Projects"
-
 # tmux
 alias tmux="TERM=xterm-256color tmux"
 
