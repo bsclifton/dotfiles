@@ -188,5 +188,4 @@ elif [ "$(uname -o)" == "Cygwin" ]; then
 else
   eval "$(rbenv init -)"
 fi
-export PATH="/usr/games:$PATH"
-export PATH="/usr/games:$PATH"
+export PATH="$PATH:~/Documents/electron/vendor/depot_tools"

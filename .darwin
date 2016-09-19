@@ -2,3 +2,4 @@ echo "Applying Mac specific configs..."
 export CLICOLOR=1
 LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
 alias proj="cd ~/Documents/"
+alias clearclip="echo -n '' | pbcopy"
