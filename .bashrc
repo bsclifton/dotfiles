@@ -36,6 +36,8 @@ HISTFILESIZE=2000
 #-------------------------------------------------------------
 if [ "$(uname -s)" == "Darwin" ]; then
   source ~/.darwin
+elif [[ "$(uname -s)" == *"MINGW64_NT-"* ]]; then
+  source ~/.mingw
 elif [ "$(uname -o)" == "Cygwin" ]; then
   source ~/.cygwin
 fi
@@ -181,11 +183,11 @@ fi
 export PATH="$PATH:$HOME/bin"
 export PATH="/usr/games:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
-if [ "$(uname -s)" == "Darwin" ]; then
-  echo "Skipping rbenv (Mac)"
-elif [ "$(uname -o)" == "Cygwin" ]; then
-  echo "Skipping rbenv (Cygwin)"
-else
-  eval "$(rbenv init -)"
-fi
+#if [ "$(uname -s)" == "Darwin" ]; then
+#  echo "Skipping rbenv (Mac)"
+#elif [ "$(uname -o)" == "Cygwin" ]; then
+#  echo "Skipping rbenv (Cygwin)"
+#else
+#  eval "$(rbenv init -)"
+#fi
 export PATH="$PATH:~/Documents/electron/vendor/depot_tools"
