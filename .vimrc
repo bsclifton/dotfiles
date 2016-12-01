@@ -47,3 +47,7 @@ set tabstop=2
 set expandtab
 set number
 
+"Ignore case when searching except when using a capital letter
+set ignorecase
+set smartcase
+
