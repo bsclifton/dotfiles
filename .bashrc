@@ -178,7 +178,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 #-------------------------------------------------------------
-# Paths, rbenv
+# Paths, rbenv, rust
 #-------------------------------------------------------------
 export PATH="$PATH:$HOME/bin"
 export PATH="/usr/games:$PATH"
@@ -191,3 +191,5 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 #  eval "$(rbenv init -)"
 #fi
 export PATH="$PATH:~/Documents/electron/vendor/depot_tools"
+export PATH="$HOME/.cargo/bin:$PATH"
+
