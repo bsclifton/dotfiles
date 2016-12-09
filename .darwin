@@ -3,3 +3,5 @@ export CLICOLOR=1
 LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
 alias proj="cd ~/Documents/"
 alias clearclip="echo -n '' | pbcopy"
+alias pgstart="brew services start postgresql"
+alias pgstop="brew services stop postgresql"

@@ -183,13 +183,10 @@ fi
 export PATH="$PATH:$HOME/bin"
 export PATH="/usr/games:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
-#if [ "$(uname -s)" == "Darwin" ]; then
-#  echo "Skipping rbenv (Mac)"
-#elif [ "$(uname -o)" == "Cygwin" ]; then
-#  echo "Skipping rbenv (Cygwin)"
-#else
-#  eval "$(rbenv init -)"
-#fi
 export PATH="$PATH:~/Documents/electron/vendor/depot_tools"
 export PATH="$HOME/.cargo/bin:$PATH"
+
+if [ -f ~/.rbenv/bin/rbenv ]; then
+  eval "$(rbenv init -)"
+fi
 

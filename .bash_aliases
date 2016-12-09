@@ -6,7 +6,7 @@ alias l='ls -CF'
 alias npmg="npm ls -g --depth=0"
 # ruby
 alias be="bundle exec"
-alias bi="bundle install"
+alias bi="bundle install --jobs=4"
 alias ber="bundle exec rspec"
 alias bet="bundle exec teaspoon"
 # tmux
