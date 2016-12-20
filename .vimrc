@@ -39,6 +39,9 @@ hi UnwantedTabs ctermbg=green guibg=#0000ff
 hi TrailingWhitespace ctermbg=red guibg=#f92672
 :autocmd BufWinEnter * 2match TrailingWhitespace /\s\+$/
 
+" Highlight matches
+set hlsearch
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
