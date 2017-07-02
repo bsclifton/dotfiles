@@ -7,6 +7,7 @@
   editor = vim
   autocrlf = input
   safecrlf = false
+	trustctime = false
 [color]
   # turn on color
   diff        = auto
