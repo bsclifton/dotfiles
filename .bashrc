@@ -182,11 +182,14 @@ fi
 #-------------------------------------------------------------
 export PATH="$PATH:$HOME/bin"
 export PATH="/usr/games:$PATH"
-export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$PATH:~/Documents/electron/vendor/depot_tools"
-export PATH="$HOME/.cargo/bin:$PATH"
 
 if [ -f ~/.rbenv/bin/rbenv ]; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
   eval "$(rbenv init -)"
 fi
 
+if [ -f ~/.cargo/bin/cargo ]; then
+  export PATH="$PATH:~/.cargo/bin/"
+  export SCCACHE_BUCKET='brave-sc-cache'
+fi
