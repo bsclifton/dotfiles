@@ -196,3 +196,9 @@ if [ -f ~/.cargo/bin/cargo ]; then
   export PATH="$PATH:~/.cargo/bin/"
   export SCCACHE_BUCKET='brave-sc-cache'
 fi
+
+if [ -f ~/.nvm ]; then
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+fi
