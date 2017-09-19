@@ -17,5 +17,6 @@ alias vdussh="vagrant destroy -f && git clean -xdf && vagrant up && vagrant ssh"
 # brave
 alias braveclean="rm -rf ./node_modules/ && rm -rf ~/.electron/ && npm install"
 alias bravenuke="npm cache clean && rm -rf ~/.node-gyp && rm -rf ~/.electron && rm -rf ./node_modules/ && npm install"
+alias muond="npm run build -- --debug_build=true --official_build=false"
 # brew
 alias brewup="brew update && brew upgrade"
