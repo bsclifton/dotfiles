@@ -3,5 +3,11 @@ export CLICOLOR=1
 LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
 alias proj="cd ~/Documents/"
 alias clearclip="echo -n '' | pbcopy"
+# postgresql
 alias pgstart="brew services start postgresql"
 alias pgstop="brew services stop postgresql"
+# brew
+alias brewup="brew update && brew upgrade"
+# sccache
+alias sccup="sccache --start-server"
+alias sccdown="sccache --stop-server"
