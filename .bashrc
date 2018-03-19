@@ -194,7 +194,7 @@ fi
 
 if [ -f ~/.cargo/bin/cargo ]; then
   export PATH="$PATH:~/.cargo/bin/"
-  export SCCACHE_BUCKET='brave-sc-cache'
+  #export SCCACHE_BUCKET='brave-sc-cache'
 fi
 
 if [ -f ~/.nvm/nvm.sh ]; then
