@@ -2,7 +2,7 @@
 alias ll='ls -alhF'
 alias la='ls -A'
 alias l='ls -CF'
-alias leases='dhcp-lease-list --lease /var/lib/dhcp/dhcpd.leases'
+alias leases='/usr/sbin/dhcp-lease-list --lease /var/lib/dhcp/dhcpd.leases'
 # node
 alias npmg="npm ls -g --depth=0"
 # ruby
