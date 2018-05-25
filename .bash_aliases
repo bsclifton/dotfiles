@@ -20,4 +20,8 @@ alias braveclean="rm -rf ./node_modules/ && rm -rf ~/.electron/ && npm install"
 alias bravenuke="npm cache clean --force && rm -rf ~/.node-gyp && rm -rf ~/.electron && rm -rf ./node_modules/ && npm install"
 alias muon="npm run build -- --official_build=false"
 alias muond="npm run build -- --debug_build=true --official_build=false"
+alias bcore="npm run build -- --official_build=false"
+alias bcorei="npm run build -- --official_build=false --no_branding_update"
+alias bcored="npm run build -- --debug_build=true --official_build=false"
+alias bcoredi="npm run build -- --debug_build=true --official_build=false --no_branding_update"
 
