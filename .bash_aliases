@@ -22,7 +22,6 @@ alias bravenuke="npm cache clean --force && rm -rf ~/.node-gyp && rm -rf ~/.elec
 alias muon="npm run build -- --official_build=false"
 alias muond="npm run build -- --debug_build=true --official_build=false"
 alias bcore="npm run build -- --official_build=false"
-alias bcorei="npm run build -- --official_build=false --no_branding_update"
 alias bcored="npm run build -- --debug_build=true --official_build=false"
-alias bcoredi="npm run build -- --debug_build=true --official_build=false --no_branding_update"
+alias bcorer="npm run build Release --debug_build=true --official_build=false"
 
