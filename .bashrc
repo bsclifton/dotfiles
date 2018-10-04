@@ -209,4 +209,3 @@ fi
 # Brave specific settings
 #-------------------------------------------------------------
 export BRAVE_ENABLE_PREVIEW_UPDATES=true
-export SCCACHE_CACHE_SIZE=50G
