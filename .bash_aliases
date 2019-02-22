@@ -17,6 +17,7 @@ alias tmux="TERM=xterm-256color tmux"
 alias vdu="vagrant destroy -f && git clean -xdf && vagrant up"
 alias vdussh="vagrant destroy -f && git clean -xdf && vagrant up && vagrant ssh"
 # brave
+alias bcdebug="npm run sync -- --all && npm run build"
 alias bcsync="npm run sync -- --all"
 alias bcrel="npm run build -- Release --official_build=false"
 
