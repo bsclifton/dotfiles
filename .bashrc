@@ -55,6 +55,7 @@ source ~/.git-prompt.sh
 GIT_PS1_SHOWUPSTREAM="auto"
 #unstaged (*) and staged (+)
 GIT_PS1_SHOWDIRTYSTATE=1
+export GPG_TTY="tty"
 
 #-------------------------------------------------------------
 # Color definitions
@@ -193,7 +194,7 @@ if [ -f ~/.rbenv/bin/rbenv ]; then
 fi
 
 if [ -f ~/.cargo/bin/cargo ]; then
-  export PATH="$PATH:~/.cargo/bin/"
+  export PATH="$PATH:$HOME/.cargo/bin/"
   export SCCACHE_CACHE_SIZE=100G
   export SCCACHE_DIR=~/sccache
   #export SCCACHE_BUCKET='brave-sc-cache'
@@ -205,7 +206,3 @@ if [ -f ~/.nvm/nvm.sh ]; then
   [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 fi
 
-#-------------------------------------------------------------
-# Brave specific settings
-#-------------------------------------------------------------
-export BRAVE_ENABLE_PREVIEW_UPDATES=true
