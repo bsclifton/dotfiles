@@ -187,8 +187,8 @@ fi
 export PATH="$PATH:$HOME/bin"
 export PATH="/usr/games:$PATH"
 export PATH="$PATH:$HOME/depot_tools/"
-export PATH="$PATH:$HOME/go/bin/"
-export GOPATH="$HOME/go/"
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH/bin"
 
 if [ -f ~/.rbenv/bin/rbenv ]; then
   export PATH="$HOME/.rbenv/bin:$PATH"
