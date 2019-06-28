@@ -1,56 +1,59 @@
-# Based on  https://github.com/bitprophet/dotfiles/blob/master/.gitignore (modified for my needs)
-########################
-# Ignore everything by default.
-*
-
-# Bash stuff (profile just sources bashrc, since it's the only thing sourced
-# when a shell is a login shell).
-!.bash*
+.DS_Store
 .*.swp
-.bash_history
-.bash_local
-.bash_logout
-.bash_profile
-!.profile
-!.cygwin
-!.darwin
-!.mingw
+Desktop.ini
+Thumbs.db
+
+# Ignore all dotfile/dotdir by default
+/.*
+
+# Bash stuff
+!/.bash*
+/.bash_history
+/.bash_local
+/.bash_logout
+/.bash_profile
+/.bash_sessions
+!/.profile
+!/.cygwin
+!/.darwin
+!/.mingw
 
 # Git aliases, identification info
-!.gitconfig
-!.git-completion.bash
-!.git-prompt.sh
-!.gitignore
-
-# Vim plugins, ftplugins, syntax etc etc
-!.vim
-!.vim/*
-# But do ignore netrw history
-.vim/.netrwhist
-!.vim/autoload/*
-!.vim/autoload/*/*
-# Pathogen bundle stuff (WTB recursive gitignore excludes...)
-# e.g. .vim/bundle/<plugin>/syntax/special_syntax.vim
-# (Added a few more asterisks just to cover any deeper setups. Sigh.)
-!.vim/bundle
-!.vim/bundle/*
-!.vim/bundle/*/*
-!.vim/bundle/*/*/*
-!.vim/bundle/*/*/*/*
-!.vim/bundle/*/*/*/*/*
-!.vim/colors/*
-!.vim/doc/*
-!.vim/ftdetect/*
-!.vim/ftplugin/*
-!.vim/ftplugin/*/*
-!.vim/indent/*
-!.vim/plugin/*
-!.vim/spell/*
-!.vim/syntax/*
-# Vim settings
-!.vimrc
+!/.gitconfig
+!/.git-completion.bash
+!/.git-prompt.sh
+!/.gitignore
 
 # Screen, tmux
-!.tmux.conf
-!.tmux
-!.tmux/*.yml
+!/.tmux.conf
+!/.tmux
+!/.tmux/*.yml
+
+!/.vim
+!/.vim/*
+/.vim/.netrwhist
+!/.vimrc
+
+
+# Other
+/Applications
+/Desktop
+/Documents
+/Downloads
+/Library
+/Movies
+/Music
+/OneDrive\ -\ Clifton family
+/Pictures
+/Public
+/Sites
+/VMware
+
+/certs
+/emu
+/go
+/jenkins.ini
+/sccache
+/session-backup
+/ssh
+
