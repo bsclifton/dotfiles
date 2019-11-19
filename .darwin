@@ -11,3 +11,5 @@ alias brewup="brew update && brew upgrade"
 # sccache
 alias sccup="sccache --start-server"
 alias sccdown="sccache --stop-server"
+# because I like British voices
+alias say="say -v daniel"

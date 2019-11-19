@@ -42,6 +42,9 @@ hi TrailingWhitespace ctermbg=red guibg=#f92672
 " Highlight matches
 set hlsearch
 
+" syntax highlighting for non-recognized extensions
+autocmd BufNewFile,BufRead *.gn set syntax=python
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

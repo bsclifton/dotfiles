@@ -16,8 +16,15 @@ alias tmux="TERM=xterm-256color tmux"
 # vagrant
 alias vdu="vagrant destroy -f && git clean -xdf && vagrant up"
 alias vdussh="vagrant destroy -f && git clean -xdf && vagrant up && vagrant ssh"
+# multi-environment git
+alias gitmain="rm ~/.gitconfig && ln -s ~/.gitconfig_main ~/.gitconfig"
+alias gitcr="rm ~/.gitconfig && ln -s ~/.gitconfig_chromium ~/.gitconfig"
 # brave
 alias bcdebug="npm run sync -- --all && npm run build"
 alias bcsync="npm run sync -- --all"
 alias bcrel="npm run build -- Release --official_build=false"
-
+# chromium
+alias crgen="gn gen out/Default"
+alias crbuild="autoninja -C out/Default chrome"
+alias crrun="out/Default/Chromium.app/Contents/MacOS/Chromium"
+alias crtest="out/Default/unit_tests --gtest_filter=\"PushClientTest.*\""

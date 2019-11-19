@@ -1,0 +1,44 @@
+[user]
+  email = clifton@brave.com
+  name = Brian Clifton
+[core]
+  # two-space tabs
+  pager  = less -FXR -x2
+  editor = vim
+	autocrlf = false
+  safecrlf = false
+	trustctime = false
+	filemode = false
+[color]
+  # turn on color
+  diff        = auto
+  status      = auto
+  branch      = auto
+  interactive = auto
+  ui          = auto
+[color "branch"]
+  current = cyan bold
+  local   = green bold
+  remote  = red bold
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old  = red bold
+  new  = green bold
+[color "status"]
+  added     = green bold
+  changed   = yellow bold
+  untracked = red
+[color "sh"]
+  branch = yellow
+[alias]
+  l  = log --graph --date=short --decorate --oneline --all
+  lg = log --graph --all --pretty=format:'%C(yellow)%h%Creset -%Cred%d%Creset %s %C(bold green)(%cr) %Creset%C(magenta)<%ae> %C(bold cyan)%an%Creset' --abbrev-commit --branches
+  lg1 = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
+  lg2 = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(bold white)— %an%C(reset)' --abbrev-commit
+  co = checkout
+  br = branch
+[push]
+  default = simple
+[http]
+	cookiefile = /Users/clifton/.gitcookies

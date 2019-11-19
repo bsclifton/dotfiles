@@ -19,7 +19,7 @@ Thumbs.db
 !/.mingw
 
 # Git aliases, identification info
-!/.gitconfig
+!/.gitconfig_*
 !/.git-completion.bash
 !/.git-prompt.sh
 !/.gitignore
@@ -56,4 +56,5 @@ Thumbs.db
 /sccache
 /session-backup
 /ssh
-
+/depot_tools
+/depot_tools_tmp

@@ -1,6 +1,7 @@
 [user]
   email = brian@clifton.me
   name = Brian Clifton
+	signingkey = 50ED18CA5C4C0F73
 [core]
   # two-space tabs
   pager  = less -FXR -x2
@@ -39,7 +40,7 @@
   br = branch
 [push]
   default = simple
-[url "ssh://git@github.com/"]
-	insteadOf = https://github.com/
+#[url "ssh://git@github.com/"]
+#	insteadOf = https://github.com/
 [commit]
 	gpgsign = true
