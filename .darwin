@@ -3,13 +3,27 @@ export CLICOLOR=1
 LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
 alias proj="cd ~/Documents/"
 alias clearclip="echo -n '' | pbcopy"
+
 # postgresql
 alias pgstart="brew services start postgresql"
 alias pgstop="brew services stop postgresql"
+
 # brew
 alias brewup="brew update && brew upgrade"
+
 # sccache
 alias sccup="sccache --start-server"
 alias sccdown="sccache --stop-server"
+
 # because I like British voices
 alias say="say -v daniel"
+
+# chromium
+alias crgen="gn gen out/Default"
+alias crbuild="autoninja -C out/Default chrome"
+alias crbuildv="autoninja -v -C out/Default chrome"
+alias crbuildunit="autoninja -C out/Default chrome/test:unit_tests"
+alias crbuildbrowser="autoninja -C out/Default chrome/test:browser_tests"
+alias crrun="out/Default/Chromium.app/Contents/MacOS/Chromium"
+alias crunittest="out/Default/unit_tests"
+alias crbrowsertest="out/Default/browser_tests"
