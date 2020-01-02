@@ -20,9 +20,9 @@ alias vdussh="vagrant destroy -f && git clean -xdf && vagrant up && vagrant ssh"
 alias gitmain="rm ~/.gitconfig && ln -s ~/.gitconfig_main ~/.gitconfig"
 alias gitcr="rm ~/.gitconfig && ln -s ~/.gitconfig_chromium ~/.gitconfig"
 # brave
-alias bcdebug="npm run sync -- --all && npm run build"
 alias bcsync="npm run sync -- --all"
 alias bcrel="npm run build -- Release --official_build=false"
+alias bcstatic="npm run build -- Static"
 # chromium
 alias gochrome="mv ~/depot_tools_tmp/ ~/depot_tools && gitcr"
 alias gobrave="mv ~/depot_tools ~/depot_tools_tmp && gitmain"
