@@ -2,6 +2,11 @@
 .*.swp
 Desktop.ini
 Thumbs.db
+AppData
+NTUSER.DAT*
+ntuser.ini
+MicrosoftEdgeBackups
+AzureStorageEmulatorDb*
 
 # Ignore all dotfile/dotdir by default
 /.*
