@@ -1,0 +1,39 @@
+{
+	"default_line_ending": "unix",
+	"file_exclude_patterns":
+	[
+		"*.ninja",
+		"*.asar",
+		"*.bin",
+		".DS_Store",
+		"*.pyc"
+	],
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"tmp/*",
+		"node_modules/*",
+		"gen",
+		"src/out/**",
+		"src/chrome/browser/android/**",
+		"src/ui/android/**"
+	],
+	"font_size": 11,
+	"ignored_packages":
+	[
+		"Markdown",
+		"Vintage"
+	],
+	"index_files": false,
+	"rulers":
+	[
+		80
+	],
+	"show_full_path": true,
+	"tab_size": 2,
+	"translate_tabs_to_spaces": true,
+	"word_wrap": false
+}

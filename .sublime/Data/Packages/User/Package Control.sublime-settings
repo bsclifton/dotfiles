@@ -1,0 +1,26 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Babel",
+		"BracketHighlighter",
+		"Color Highlighter",
+		"EditorConfig",
+		"Favorites",
+		"FileDiffs",
+		"GitGutter",
+		"Handlebars",
+		"MarkdownPreview",
+		"MarkdownTOC",
+		"Package Control",
+		"Pretty JSON",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-contrib-standard",
+		"TrailingSpaces",
+		"TypeScript"
+	]
+}

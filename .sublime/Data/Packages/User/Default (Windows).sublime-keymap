@@ -1,0 +1,12 @@
+[
+  // Formatting
+  { "keys": [ "ctrl+shift+r" ], "command": "reindent", "args": { "single_line": false } },
+  { "keys": [ "ctrl+shift+t" ], "command": "delete_trailing_spaces" },
+  { "keys": [ "ctrl+shift+j" ], "command": "pretty_json" },
+  { "keys": [ "ctrl+alt+p" ], "command": "prompt_select_workspace" },
+  // See https://www.chromium.org/developers/sublime-text#TOC-Format-selection-or-area-around-cursor-using-clang-format
+  { "keys": [ "ctrl+shift+c"], "command": "clang_format" },
+
+  // Other
+  { "keys": [ "super+0" ], "command": "reset_font_size" }
+]

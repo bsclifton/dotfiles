@@ -1,0 +1,6 @@
+{
+  "git_binary": {
+    "default": "/usr/bin/git",
+    "windows": "C:\\Program Files\\Git\\mingw64\\bin\\git.exe"
+  }
+}
