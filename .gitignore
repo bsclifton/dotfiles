@@ -63,3 +63,9 @@ AzureStorageEmulatorDb*
 /ssh
 /depot_tools
 /depot_tools_tmp
+
+# Windows
+/source
+/Favorites
+/Links
+/Searches
