@@ -69,3 +69,5 @@ AzureStorageEmulatorDb*
 /Favorites
 /Links
 /Searches
+/ConEmu
+!/ConEmu/ConEmu.xml

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2020-05-15 23:39:31" build="191012">
-			<value name="StartType" type="hex" data="02"/>
+		<key name=".Vanilla" modified="2020-05-20 00:26:39" build="191012">
+			<value name="StartType" type="hex" data="03"/>
 			<value name="CmdLine" type="string" data=""/>
 			<value name="StartTasksFile" type="string" data=""/>
-			<value name="StartTasksName" type="string" data="{Shells::cmd}"/>
+			<value name="StartTasksName" type="string" data="{Bash::Git bash}"/>
 			<value name="StartFarFolders" type="hex" data="00"/>
 			<value name="StartFarEditors" type="hex" data="00"/>
 			<value name="ColorTable00" type="dword" data="00222827"/>
@@ -342,7 +342,7 @@
 			<value name="Cascaded" type="hex" data="01"/>
 			<value name="IntegralSize" type="hex" data="00"/>
 			<value name="WindowMode" type="dword" data="00000520"/>
-			<value name="ConWnd X" type="long" data="498"/>
+			<value name="ConWnd X" type="long" data="512"/>
 			<value name="ConWnd Y" type="long" data="263"/>
 			<value name="LastMonitor" type="string" data="0,0,2560,1400"/>
 			<value name="ConWnd Width" type="dword" data="0000007c"/>
@@ -394,7 +394,7 @@
 			<value name="CTS.Intelligent" type="hex" data="01"/>
 			<value name="CTS.IntelligentExceptions" type="string" data="far|vim"/>
 			<value name="CTS.AutoCopy" type="hex" data="01"/>
-			<value name="CTS.ResetOnRelease" type="hex" data="00"/>
+			<value name="CTS.ResetOnRelease" type="hex" data="01"/>
 			<value name="CTS.IBeam" type="hex" data="01"/>
 			<value name="CTS.EndOnTyping" type="hex" data="00"/>
 			<value name="CTS.EndOnKeyPress" type="hex" data="00"/>
@@ -519,7 +519,7 @@
 			<value name="TabRecent" type="hex" data="01"/>
 			<value name="TabDblClick" type="ulong" data="1"/>
 			<value name="TabBtnDblClick" type="ulong" data="6"/>
-			<value name="TabsOnTaskBar" type="hex" data="02"/>
+			<value name="TabsOnTaskBar" type="hex" data="00"/>
 			<value name="TaskBarOverlay" type="hex" data="01"/>
 			<value name="TaskbarProgress" type="hex" data="01"/>
 			<value name="TabCloseMacro" type="string" data=""/>
@@ -694,6 +694,14 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 					<value name="Cmd1" type="string" data='*cmd.exe /k Title Chocolatey &amp; "%ConEmuBaseDir%\Addons\ChocolateyAbout.cmd"'/>
+				</key>
+				<key name="&lt;Startup&gt;" modified="2020-05-20 00:33:06" build="191012">
+					<value name="GuiArgs" type="string" data=""/>
+					<value name="Active" type="long" data="3"/>
+					<value name="Count" type="long" data="3"/>
+					<value name="Cmd1" type="string" data='-cur_console:bp -cur_console:d:C:\Users\brian set "PATH=%ConEmuDrive%\Program Files\Git\usr\bin;%PATH%" &amp; "%ConEmuDrive%\Program Files\Git\git-cmd.exe" --no-cd --command=%ConEmuBaseDirShort%\conemu-msys2-64.exe /usr/bin/bash.exe -l -i'/>
+					<value name="Cmd2" type="string" data='-cur_console:bps1T50H -cur_console:d:C:\Users\brian set "PATH=%ConEmuDrive%\Program Files\Git\usr\bin;%PATH%" &amp; "%ConEmuDrive%\Program Files\Git\git-cmd.exe" --no-cd --command=%ConEmuBaseDirShort%\conemu-msys2-64.exe /usr/bin/bash.exe -l -i'/>
+					<value name="Cmd3" type="string" data='&gt; -cur_console:bnps3T50V -cur_console:d:C:\Users\brian set "PATH=%ConEmuDrive%\Program Files\Git\usr\bin;%PATH%" &amp; "%ConEmuDrive%\Program Files\Git\git-cmd.exe" --no-cd --command=%ConEmuBaseDirShort%\conemu-msys2-64.exe /usr/bin/bash.exe -l -i'/>
 				</key>
 			</key>
 			<key name="Apps" modified="2020-05-15 12:56:21" build="191012">
