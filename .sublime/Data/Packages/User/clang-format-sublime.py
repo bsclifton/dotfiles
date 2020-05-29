@@ -19,6 +19,7 @@ import subprocess
 
 # Change this to the full path if clang-format is not on the path.
 binary = 'C:\\bb1\\vendor\\depot_tools\\clang-format.bat'
+# TODO: append "C:\bb1\src\buildtools" to PATH before RUN below
 
 # Change this to format according to other formatting styles. See the output of
 # 'clang-format --help' for a list of supported styles. The default looks for
