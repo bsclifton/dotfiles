@@ -21,7 +21,7 @@ alias gitmain="rm ~/.gitconfig && ln -s ~/.gitconfig_main ~/.gitconfig"
 alias gitcr="rm ~/.gitconfig && ln -s ~/.gitconfig_chromium ~/.gitconfig"
 # brave
 alias bcsync="npm run sync"
-alias bcstart="npm start -- --user_data_dir_name=$(git -C ./src/brave rev-parse --abbrev-ref HEAD)"
+#alias bcstart="npm start -- --user_data_dir_name=$(git -C ./src/brave rev-parse --abbrev-ref HEAD)"
 # chromium
 alias gochrome="mv ~/depot_tools_tmp/ ~/depot_tools && gitcr"
 alias gobrave="mv ~/depot_tools ~/depot_tools_tmp && gitmain"

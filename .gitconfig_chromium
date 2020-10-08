@@ -41,4 +41,4 @@
 [push]
   default = simple
 [http]
-	cookiefile = /Users/clifton/.gitcookies
+	cookiefile = C:/Users/brian/.gitcookies
