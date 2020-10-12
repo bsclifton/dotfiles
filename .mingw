@@ -1,10 +1,12 @@
 echo "Applying MinGW specific configs..."
 if grep -q "clifton@brave.com" ~/.gitconfig
 then
-  echo "Detected Chromium .gitconfig\nExporting required variables (PATHing depot_tools, etc)"
+  echo "Detected Chromium .gitconfig"
+  echo "Exporting required variables (PATHing depot_tools, etc)"
   export PATH="/c/chromium/depot_tools:$PATH"
   export DEPOT_TOOLS_WIN_TOOLCHAIN=0
 else
-  echo "Detected main (Brave) .gitconfig\nUnsetting Chromium specific variables"
+  echo "Detected main (Brave) .gitconfig"
+  echo "Unsetting Chromium specific variables"
   unset DEPOT_TOOLS_WIN_TOOLCHAIN
 fi
