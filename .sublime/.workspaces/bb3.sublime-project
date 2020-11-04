@@ -1,0 +1,18 @@
+{
+	"folders":
+	[
+		{
+			"path": "C:\\bb3"
+		}
+	],
+  "settings": {
+    "project_environment": {
+      "env": {},
+      "windows": {
+        "CHROMIUM_BUILDTOOLS_PATH": "C:\\bb3\\src\\buildtools"
+      },
+      "osx": {},
+      "linux": {}
+    }
+  }
+}

@@ -21,6 +21,7 @@
 		"src/chrome/browser/android/**",
 		"src/ui/android/**"
 	],
+	"font_size": 11,
 	"ignored_packages":
 	[
 		"Markdown",
