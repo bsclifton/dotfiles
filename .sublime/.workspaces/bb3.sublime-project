@@ -9,7 +9,9 @@
     "project_environment": {
       "env": {},
       "windows": {
-        "CHROMIUM_BUILDTOOLS_PATH": "C:\\bb3\\src\\buildtools"
+        "env": {
+          "CHROMIUM_BUILDTOOLS_PATH": "C:\\bb3\\src\\buildtools"
+        }
       },
       "osx": {},
       "linux": {}

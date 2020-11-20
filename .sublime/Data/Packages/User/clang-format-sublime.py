@@ -16,10 +16,17 @@ from __future__ import print_function
 import sublime
 import sublime_plugin
 import subprocess
+import os
 
 # Change this to the full path if clang-format is not on the path.
-binary = 'C:\\bb1\\vendor\\depot_tools\\clang-format.bat'
-# TODO: append "C:\bb1\src\buildtools" to PATH before RUN below
+# BSC: modified to get path based on `CHROMIUM_BUILDTOOLS_PATH`
+tools_path = os.getenv('CHROMIUM_BUILDTOOLS_PATH')
+if tools_path is not None:
+  binary = tools_path.replace(
+    '\\src\\buildtools',
+    '\\src\\brave\\vendor\\depot_tools\\clang-format.bat')
+else:
+  binary = 'clang-format'
 
 # Change this to format according to other formatting styles. See the output of
 # 'clang-format --help' for a list of supported styles. The default looks for

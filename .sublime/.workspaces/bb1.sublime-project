@@ -1,15 +1,17 @@
 {
-	"folders":
-	[
-		{
-			"path": "C:\\bb1"
-		}
-	],
+  "folders":
+  [
+    {
+      "path": "C:\\bb1"
+    }
+  ],
   "settings": {
     "project_environment": {
       "env": {},
       "windows": {
-        "CHROMIUM_BUILDTOOLS_PATH": "C:\\bb1\\src\\buildtools"
+        "env": {
+          "CHROMIUM_BUILDTOOLS_PATH": "C:\\bb1\\src\\buildtools"
+        }
       },
       "osx": {},
       "linux": {}
