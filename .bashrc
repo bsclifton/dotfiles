@@ -83,12 +83,17 @@ shopt -s cdspell
 #-------------------------------------------------------------
 # Platform specific initialization
 #-------------------------------------------------------------
+is_wsl2=`cat /proc/version | grep "microsoft"`
 if [ "$(uname -s)" == "Darwin" ]; then
   source ~/.darwin
 elif [[ "$(uname -s)" == *"MINGW64_NT-"* ]]; then
   source ~/.mingw
 elif [ "$(uname -o)" == "Cygwin" ]; then
   source ~/.cygwin
+elif [ ! -z "$is_wsl2" ]; then
+  source ~/.wsl2
+else
+  echo "Specific environment not detected (darwin, mingw, etc)"
 fi
 
 #-------------------------------------------------------------
