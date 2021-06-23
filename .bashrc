@@ -213,7 +213,6 @@ PS1="$IBlack[\t] ($Green\w$IBlack)\n$BYellow\u$BWhite@$BBlue\h$IRed\$(__git_ps1 
 #-------------------------------------------------------------
 export PATH="$PATH:$HOME/bin"
 export PATH="/usr/games:$PATH"
-export PATH="$PATH:$HOME/depot_tools/"
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
 

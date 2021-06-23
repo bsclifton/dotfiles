@@ -21,11 +21,10 @@
 		"src/chrome/browser/android/**",
 		"src/ui/android/**"
 	],
-	"font_size": 11,
 	"ignored_packages":
 	[
 		"Markdown",
-		"Vintage"
+		"Vintage",
 	],
 	"index_files": false,
 	"rulers":
@@ -35,5 +34,10 @@
 	"show_full_path": true,
 	"tab_size": 2,
 	"translate_tabs_to_spaces": true,
-	"word_wrap": false
+	"word_wrap": false,
+	"hardware_acceleration": "opengl",
+	"theme": "auto",
+	"dark_theme": "Default.sublime-theme",
+	"light_theme": "Default.sublime-theme",
+	"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
 }
