@@ -73,10 +73,7 @@ AzureStorageEmulatorDb*
 !/ConEmu/ConEmu.xml
 /*.log
 /*.exe
-/rufus*
 /VirtualBox VMs
 /WinMerge
-/cpuid
-/winchecksec
-/DB Browser for SQLite
+/Applications
 /chromium_auth.sh
