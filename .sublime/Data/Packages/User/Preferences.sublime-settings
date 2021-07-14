@@ -1,5 +1,24 @@
 {
+	// https://chromium.googlesource.com/chromium/src/+/64.0.3265.0/docs/sublime_ide.md
+
+	// Basic Chromium style preferences
+  "rulers": [80],
+  "tab_size": 2,
+  "trim_trailing_white_space_on_save": true,
+  "ensure_newline_at_eof_on_save": true,
+  "translate_tabs_to_spaces" : true,
+
+  // Optional, but also useful, preferences
+  "always_show_minimap_viewport": true,
+  "bold_folder_labels": true,
+  // "draw_white_space": "all",
+  // "enable_tab_scrolling": false,
+  "highlight_line": true,
+
+  // Mainly for Windows, but harmless on Mac/Linux
 	"default_line_ending": "unix",
+
+	// Clifton specific
 	"file_exclude_patterns":
 	[
 		"*.ninja",
@@ -18,8 +37,6 @@
 		"node_modules/*",
 		"gen",
 		"src/out/**",
-		"src/chrome/browser/android/**",
-		"src/ui/android/**"
 	],
 	"ignored_packages":
 	[
@@ -27,13 +44,7 @@
 		"Vintage",
 	],
 	"index_files": false,
-	"rulers":
-	[
-		80
-	],
 	"show_full_path": true,
-	"tab_size": 2,
-	"translate_tabs_to_spaces": true,
 	"word_wrap": false,
 	"hardware_acceleration": "opengl",
 	"theme": "auto",

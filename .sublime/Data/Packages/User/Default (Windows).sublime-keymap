@@ -12,6 +12,7 @@
   // See https://www.chromium.org/developers/sublime-text#TOC-Format-selection-or-area-around-cursor-using-clang-format
   { "keys": [ "ctrl+shift+c"], "command": "clang_format" },
 
+
   // Other
   { "keys": [ "ctrl+0" ], "command": "reset_font_size" },
   { "keys": [ "ctrl+shift+`" ], "command": "show_panel", "args": {"panel": "console", "toggle": true} }

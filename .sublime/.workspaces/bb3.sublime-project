@@ -2,8 +2,24 @@
 	"folders":
 	[
 		{
-			"path": "C:\\bb3"
-		}
+			"path": "C:\\bb3",
+      "file_exclude_patterns":
+      [
+        "*.vcproj",
+        "*.vcxproj",
+        "*.sln",
+        "*.gitignore",
+        "*.gitmodules",
+        "*.vcxproj.*",
+      ],
+      "folder_exclude_patterns":
+      [
+        "build",
+        "out",
+        "third_party",
+        ".git",
+      ],
+    }
 	],
   "settings": {
     "project_environment": {
