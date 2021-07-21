@@ -701,7 +701,7 @@
 					<value name="Count" type="long" data="1"/>
 					<value name="Cmd1" type="string" data='*cmd.exe /k Title Chocolatey &amp; "%ConEmuBaseDir%\Addons\ChocolateyAbout.cmd"'/>
 				</key>
-				<key name="&lt;Startup&gt;" modified="2021-07-13 11:17:46" build="210627">
+				<key name="&lt;Startup&gt;" modified="2021-07-21 14:15:10" build="210627">
 					<value name="GuiArgs" type="string" data=""/>
 					<value name="Active" type="long" data="3"/>
 					<value name="Count" type="long" data="3"/>
