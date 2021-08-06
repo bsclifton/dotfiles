@@ -1,1 +1,2 @@
 echo "Applying Windows WSL2 specific configs..."
+alias bundletool='java -jar /home/clifton/Applications/bundletool-all-1.7.0.jar'
