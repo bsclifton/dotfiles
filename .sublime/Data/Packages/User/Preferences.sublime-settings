@@ -37,6 +37,7 @@
 		"node_modules/*",
 		"gen",
 		"src/out/**",
+		"src/brave/coverage"
 	],
 	"ignored_packages":
 	[
