@@ -20,6 +20,7 @@ alias vdussh="vagrant destroy -f && git clean -xdf && vagrant up && vagrant ssh"
 alias gitmain="rm ~/.gitconfig && ln -s ~/.gitconfig_main ~/.gitconfig"
 alias gitcr="rm ~/.gitconfig && ln -s ~/.gitconfig_chromium ~/.gitconfig"
 # brave
+alias bbup="git stash && git pull && git stash pop"
 alias bcsync="npm run sync"
 alias bcpatch="git checkout -f && npm run sync && npm run apply_patches"
 #alias bcstart="npm start -- --user_data_dir_name=$(git -C ./src/brave rev-parse --abbrev-ref HEAD)"
