@@ -233,3 +233,20 @@ if [ -f ~/.nvm/nvm.sh ]; then
   [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
   [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 fi
+
+#-------------------------------------------------------------
+# Android command line tools
+#-------------------------------------------------------------
+
+# https://developer.android.com/studio#downloads
+if [ -f ~/cmdline-tools/bin/sdkmanager ]; then
+  echo "Android command line tools detected"
+  export PATH="$PATH:$HOME/cmdline-tools/bin/"
+fi
+
+# https://developer.android.com/studio/releases/platform-tools
+if [ -f ~/platform-tools/adb ]; then
+  echo "Android SDK Platform Tools detected"
+  export PATH="$PATH:$HOME/platform-tools/"
+fi
+
