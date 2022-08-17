@@ -223,9 +223,6 @@ fi
 
 if [ -f ~/.cargo/bin/cargo ]; then
   export PATH="$PATH:$HOME/.cargo/bin/"
-  export SCCACHE_CACHE_SIZE=100G
-  export SCCACHE_DIR=~/sccache
-  #export SCCACHE_BUCKET='brave-sc-cache'
 fi
 
 if [ -f ~/.nvm/nvm.sh ]; then

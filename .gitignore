@@ -78,3 +78,7 @@ AzureStorageEmulatorDb*
 /Applications
 /chromium_auth.sh
 /Apple
+
+# Android CLI tools
+/cmdline-tools
+/platform-tools
