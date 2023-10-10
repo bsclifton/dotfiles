@@ -221,9 +221,9 @@ if [ -f ~/.rbenv/bin/rbenv ]; then
   eval "$(rbenv init -)"
 fi
 
-if [ -f ~/.cargo/bin/cargo ]; then
-  export PATH="$PATH:$HOME/.cargo/bin/"
-fi
+#if [ -f ~/.cargo/bin/cargo ]; then
+#  export PATH="$PATH:$HOME/.cargo/bin/"
+#fi
 
 if [ -f ~/.nvm/nvm.sh ]; then
   export NVM_DIR="$HOME/.nvm"
@@ -237,6 +237,10 @@ fi
 
 # https://developer.android.com/studio#downloads
 if [ -f ~/cmdline-tools/bin/sdkmanager ]; then
+  echo "Android command line tools detected"
+  export PATH="$PATH:$HOME/cmdline-tools/bin/"
+fi
+if [ -f ~/cmdline-tools/bin/sdkmanager.bat ]; then
   echo "Android command line tools detected"
   export PATH="$PATH:$HOME/cmdline-tools/bin/"
 fi

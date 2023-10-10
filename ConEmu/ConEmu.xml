@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2022-07-21 17:45:16" build="210912">
+		<key name=".Vanilla" modified="2023-10-05 23:37:32" build="230724">
 			<value name="StartType" type="hex" data="03"/>
 			<value name="CmdLine" type="string" data=""/>
 			<value name="StartTasksFile" type="string" data=""/>
@@ -240,8 +240,8 @@
 				<value name="Key.EditMenu2" type="dword" data="00000000"/>
 			</key>
 			<value name="CmdLineHistory" type="multi">
-				<line data="{WSL::WSL}"/>
 				<line data="{Bash::Git bash}"/>
+				<line data="{WSL::WSL}"/>
 				<line data='set "PATH=%ConEmuDrive%\Program Files\Git\usr\bin;%PATH%" &amp; "%ConEmuDrive%\Program Files\Git\git-cmd.exe" --no-cd --command=%ConEmuBaseDirShort%\conemu-msys2-64.exe /usr/bin/bash.exe -l -i -cur_console:p'/>
 				<line data="{Bash::Msys2-MINGW64}"/>
 				<line data="{Bash::Msys2-64}"/>
@@ -350,11 +350,11 @@
 			<value name="Cascaded" type="hex" data="01"/>
 			<value name="IntegralSize" type="hex" data="00"/>
 			<value name="WindowMode" type="dword" data="0000051f"/>
-			<value name="ConWnd X" type="long" data="18"/>
-			<value name="ConWnd Y" type="long" data="0"/>
-			<value name="LastMonitor" type="string" data="0,0,2560,1400"/>
-			<value name="ConWnd Width" type="dword" data="0000012c"/>
-			<value name="ConWnd Height" type="dword" data="0000004b"/>
+			<value name="ConWnd X" type="long" data="141"/>
+			<value name="ConWnd Y" type="long" data="112"/>
+			<value name="LastMonitor" type="string" data="0,0,2560,1392"/>
+			<value name="ConWnd Width" type="dword" data="00000117"/>
+			<value name="ConWnd Height" type="dword" data="0000003e"/>
 			<value name="16bit Height" type="ulong" data="0"/>
 			<value name="Restore2ActiveMon" type="hex" data="00"/>
 			<value name="RestoreInactive" type="hex" data="00"/>
@@ -565,7 +565,7 @@
 			<value name="MinimizeOnLoseFocus" type="hex" data="00"/>
 			<value name="DisableFarFlashing" type="hex" data="00"/>
 			<value name="DisableAllFlashing" type="hex" data="00"/>
-			<value name="FindText" type="string" data=""/>
+			<value name="FindText" type="string" data="retry-aftern"/>
 			<value name="FindMatchCase" type="hex" data="00"/>
 			<value name="FindMatchWholeWords" type="hex" data="00"/>
 			<value name="FindTransparent" type="hex" data="01"/>
@@ -703,14 +703,13 @@
 					<value name="Count" type="long" data="1"/>
 					<value name="Cmd1" type="string" data='*cmd.exe /k Title Chocolatey &amp; "%ConEmuBaseDir%\Addons\ChocolateyAbout.cmd"'/>
 				</key>
-				<key name="&lt;Startup&gt;" modified="2022-08-17 15:01:33" build="210912">
+				<key name="&lt;Startup&gt;" modified="2023-10-09 09:42:44" build="230724">
 					<value name="GuiArgs" type="string" data=""/>
-					<value name="Active" type="long" data="4"/>
-					<value name="Count" type="long" data="4"/>
+					<value name="Active" type="long" data="2"/>
+					<value name="Count" type="long" data="3"/>
 					<value name="Cmd1" type="string" data='-cur_console:p -cur_console:d:C:\Users\brian set "PATH=%ConEmuDrive%\Program Files\Git\usr\bin;%PATH%" &amp; "%ConEmuDrive%\Program Files\Git\git-cmd.exe" --no-cd --command=%ConEmuBaseDirShort%\conemu-msys2-64.exe /usr/bin/bash.exe -l -i'/>
-					<value name="Cmd2" type="string" data='-cur_console:ps1T46H -cur_console:d:C:\Users\brian set "PATH=%ConEmuDrive%\Program Files\Git\usr\bin;%PATH%" &amp; "%ConEmuDrive%\Program Files\Git\git-cmd.exe" --no-cd --command=%ConEmuBaseDirShort%\conemu-msys2-64.exe /usr/bin/bash.exe -l -i'/>
-					<value name="Cmd3" type="string" data='-cur_console:ps1T36V -cur_console:d:C:\Users\brian set "PATH=%ConEmuDrive%\Program Files\Git\usr\bin;%PATH%" &amp; "%ConEmuDrive%\Program Files\Git\git-cmd.exe" --no-cd --command=%ConEmuBaseDirShort%\conemu-msys2-64.exe /usr/bin/bash.exe -l -i'/>
-					<value name="Cmd4" type="string" data="&gt; -cur_console:p -cur_console:d:C:\Users\brian -cur_console:m:/mnt %windir%\system32\wsl.exe"/>
+					<value name="Cmd2" type="string" data='&gt; -cur_console:ps1T42H -cur_console:d:C:\Users\brian set "PATH=%ConEmuDrive%\Program Files\Git\usr\bin;%PATH%" &amp; "%ConEmuDrive%\Program Files\Git\git-cmd.exe" --no-cd --command=%ConEmuBaseDirShort%\conemu-msys2-64.exe /usr/bin/bash.exe -l -i'/>
+					<value name="Cmd3" type="string" data='-cur_console:ps1T39V -cur_console:d:C:\Users\brian set "PATH=%ConEmuDrive%\Program Files\Git\usr\bin;%PATH%" &amp; "%ConEmuDrive%\Program Files\Git\git-cmd.exe" --no-cd --command=%ConEmuBaseDirShort%\conemu-msys2-64.exe /usr/bin/bash.exe -l -i'/>
 				</key>
 				<key name="Task11" modified="2021-04-27 23:18:20" build="210422">
 					<value name="Name" type="string" data="{Bash::bash}"/>
