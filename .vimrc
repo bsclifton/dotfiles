@@ -52,6 +52,7 @@ set autoindent
 set tabstop=2
 set expandtab
 set number
+set nofixendofline
 
 "Ignore case when searching except when using a capital letter
 set ignorecase
