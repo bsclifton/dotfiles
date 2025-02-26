@@ -1,5 +1,5 @@
 {
-	// https://chromium.googlesource.com/chromium/src/+/64.0.3265.0/docs/sublime_ide.md
+	// https://chromium.googlesource.com/chromium/src/+/refs/heads/main/docs/sublime_ide.md
 
 	// Basic Chromium style preferences
   "rulers": [80],
@@ -25,7 +25,8 @@
 		"*.asar",
 		"*.bin",
 		".DS_Store",
-		"*.pyc"
+		"*.pyc",
+		"*.xtb",
 	],
 	"folder_exclude_patterns":
 	[
@@ -37,7 +38,7 @@
 		"node_modules/*",
 		"gen",
 		"src/out/**",
-		"src/brave/coverage"
+		"src/brave/coverage",
 	],
 	"ignored_packages":
 	[
@@ -62,4 +63,14 @@
 	/*"font_size": 14,*/
 	/*"font_size": 12,*/
 	/*"font_size": 13,*/
+	/*"font_size": 13,*/
+	/*"font_size": 13,*/
+	/*"font_size": 11,*/
+	/*"font_size": 14,*/
+	/*"font_size": 13,*/
+	/*"font_size": 15,*/
+	/*"font_size": 13,*/
+	/*"font_size": 13,*/
+	/*"font_size": 12,*/
+	"font_size": 11,
 }

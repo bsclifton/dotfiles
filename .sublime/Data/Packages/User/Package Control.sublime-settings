@@ -8,8 +8,6 @@
 		"BracketHighlighter",
 		"GitGutter",
 		"Handlebars",
-		"LSP",
-		"LSP-clangd",
 		"MarkdownPreview",
 		"MarkdownTOC",
 		"Package Control",
