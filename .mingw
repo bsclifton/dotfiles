@@ -10,3 +10,17 @@ else
   echo "Unsetting Chromium specific variables"
   unset DEPOT_TOOLS_WIN_TOOLCHAIN
 fi
+
+#-------------------------------------------------------------
+# Windows Terminal options
+#-------------------------------------------------------------
+# This helps Windows Terminal remember your CWD. For more info see:
+# https://github.com/microsoft/terminal/issues/8166
+# https://gist.github.com/LuanVSO/5e914af7f3f038f247b6729fc43b9c7c
+__wt_osc9-9 () {
+    _win_path="$(cygpath -m $(pwd))"
+    printf "\033]9;9;\"%s\"\033\\" "$_win_path"
+}
+
+[ -n "$BASH_VERSION" ] && [ -n "$WT_SESSION" ] && PROMPT_COMMAND="__wt_osc9-9"
+
