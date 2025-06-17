@@ -219,6 +219,7 @@ export PATH="$PATH:$GOPATH/bin"
 if [ -f ~/.rbenv/bin/rbenv ]; then
   export PATH="$HOME/.rbenv/bin:$PATH"
   eval "$(rbenv init -)"
+  alias rbenvi="rbenv install $(rbenv install -l | grep -v - | tail -1)"
 fi
 
 #if [ -f ~/.cargo/bin/cargo ]; then

@@ -11,7 +11,6 @@ alias be="bundle exec"
 alias bi="bundle install --jobs=4"
 alias ber="bundle exec rspec"
 alias bet="bundle exec teaspoon"
-alias rbenvi="rbenv install $(rbenv install -l | grep -v - | tail -1)"
 # tmux
 alias tmux="TERM=xterm-256color tmux"
 # vagrant
