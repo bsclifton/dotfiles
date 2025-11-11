@@ -9,6 +9,9 @@
   autocrlf = false
   safecrlf = false
 	trustctime = false
+	filemode = false
+	fscache = true
+	preloadindex = true
 [color]
   # turn on color
   diff        = auto
