@@ -93,7 +93,12 @@ elif [ "$(uname -o)" == "Cygwin" ]; then
 elif [ ! -z "$is_wsl2" ]; then
   source ~/.wsl2
 else
-  echo "Specific environment not detected (darwin, mingw, etc)"
+  UBUNTU=`grep -i ubuntu /etc/lsb-release | wc -l`
+  if [ "$UBUNTU" != "0" ] ; then
+    source ~/.ubuntu
+  else
+    echo "Specific environment not detected (darwin, mingw, etc)"
+  fi
 fi
 
 #-------------------------------------------------------------
