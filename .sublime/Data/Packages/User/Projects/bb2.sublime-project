@@ -2,7 +2,7 @@
   "folders":
   [
     {
-      "path": "C:\\bb2",
+      "path": "D:\\bb2",
       "file_exclude_patterns":
       [
         "*.vcproj",
@@ -24,7 +24,7 @@
       "env": {},
       "windows": {
         "env": {
-          "CHROMIUM_BUILDTOOLS_PATH": "C:\\bb2\\src\\buildtools"
+          "CHROMIUM_BUILDTOOLS_PATH": "D:\\bb2\\src\\buildtools"
         }
       },
       "osx": {},

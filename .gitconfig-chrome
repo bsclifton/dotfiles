@@ -40,5 +40,7 @@
   br = branch
 [push]
   default = simple
-[http]
-	cookiefile = C:/Users/brian/.gitcookies
+[credential "https://chromium.googlesource.com"]
+	helper = 
+	helper = luci
+	useHttpPath = yes

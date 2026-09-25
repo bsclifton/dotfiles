@@ -214,12 +214,14 @@ On_IWhite='\[\e[0;107m\]'   # White
 PS1="$IBlack[\t] ($Green\w$IBlack)\n$BYellow\u$BWhite@$BBlue\h$IRed\$(__git_ps1 \" (%s)\") $IBlack\$ $Color_Off"
 
 #-------------------------------------------------------------
-# Paths, rbenv, rust, nvm
+# Paths, rbenv, rust, nvm, etc
 #-------------------------------------------------------------
 export PATH="$PATH:$HOME/bin"
 export PATH="/usr/games:$PATH"
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
+export PATH="$PATH:$HOME/.local/bin"
+
 
 if [ -f ~/.rbenv/bin/rbenv ]; then
   export PATH="$HOME/.rbenv/bin:$PATH"

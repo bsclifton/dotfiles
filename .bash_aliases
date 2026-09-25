@@ -17,8 +17,8 @@ alias tmux="TERM=xterm-256color tmux"
 alias vdu="vagrant destroy -f && git clean -xdf && vagrant up"
 alias vdussh="vagrant destroy -f && git clean -xdf && vagrant up && vagrant ssh"
 # multi-environment git
-alias gitmain="rm ~/.gitconfig && ln -s ~/.gitconfig_main ~/.gitconfig"
-alias gitcr="rm ~/.gitconfig && ln -s ~/.gitconfig_chromium ~/.gitconfig"
+alias gitmain="mv ~/.gitconfig ~/.gitconfig-chrome && mv ~/.gitconfig-brave ~/.gitconfig"
+alias gitcr="mv ~/.gitconfig ~/.gitconfig-brave && mv ~/.gitconfig-chrome ~/.gitconfig"
 # brave
 alias bbup="git stash && git pull && git stash pop"
 alias bbi="npm run init && npm run build"
