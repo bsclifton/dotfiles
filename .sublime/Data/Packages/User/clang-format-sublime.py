@@ -22,9 +22,14 @@ import os
 # BSC: modified to get path based on `CHROMIUM_BUILDTOOLS_PATH`
 tools_path = os.getenv('CHROMIUM_BUILDTOOLS_PATH')
 if tools_path is not None:
-  binary = tools_path.replace(
-    '\\src\\buildtools',
-    '\\src\\brave\\vendor\\depot_tools\\clang-format.bat')
+  if tools_path.startswith('D:\\'):
+    binary = tools_path.replace(
+      '\\src\\buildtools',
+      '\\src\\brave\\vendor\\depot_tools\\clang-format.bat')
+  else:
+    binary = tools_path.replace(
+      '\\src\\buildtools',
+      '\\src\\buildtools\\win-format\\clang-format.exe')
 else:
   binary = 'clang-format'
 
